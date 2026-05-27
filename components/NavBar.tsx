@@ -38,19 +38,6 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
             <SearchForm />
-
-            <Link
-                href="/"
-                className="
-                px-3
-                py-2
-                rounded-lg
-                hover:bg-gray-100
-                transition
-                "
-            >
-                Home
-            </Link>
         </div>
       </nav>
     </header>
