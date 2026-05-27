@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav className="
         sticky
         top-0
-        z-50
+        z-[1000]
         bg-white
         border-b
         max-w-6xl
