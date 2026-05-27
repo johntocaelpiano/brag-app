@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'leaflet/dist/leaflet.css';
@@ -15,10 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BRAG Route Guide",
-  description: "Made by robots and John",
-  applicationName: "BRAG Route Guide",
-};
+  title: 'BRAG Route Guide',
+
+  description:
+    'Daily routes, maps, rest stops, and rider resources for BRAG.',
+
+  manifest: '/manifest.json',
+}
+
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
+}
 
 export default function RootLayout({
   children,
