@@ -12,6 +12,10 @@ export default withPWA({
   skipWaiting: true,
   disable: process.env.NODE_ENV === 'development',
 
+  fallbacks: {
+  document: '/offline',
+  },
+
   runtimeCaching: [
     {
       urlPattern: /^https?.*/,
